@@ -3,9 +3,10 @@
   <%= form.text_field :content , id: "content"%>
   <%= form.submit '投稿する' , id: "submit" %>
 <% end %>
+
 <div id="list">
-</div
->
+</div>
+
 <% @posts.each do |post| %>
   <div class="post" date-id = <%= post.id %> data-check=<%= post.checked %>>
     <div class="post-date">
